@@ -1,0 +1,260 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} ChatAI - SerenAI {% endblock title %}
+
+
+{% block headerTitle %}
+	<div class="page-title d-none d-md-block">
+		<h2>Chat AI</h2>
+	</div>
+{% endblock headerTitle %}
+
+
+
+{% block main %}
+    <style>
+      .dot-elastic {
+      position: relative;
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+      background-color: #9880ff;
+      color: #9880ff;
+      animation: dot-elastic 1s infinite linear;
+    }
+    .dot-elastic::before, .dot-elastic::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 0;
+    }
+    .dot-elastic::before {
+      left: -15px;
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+      background-color: #9880ff;
+      color: #9880ff;
+      animation: dot-elastic-before 1s infinite linear;
+    }
+    .dot-elastic::after {
+      left: 15px;
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+      background-color: #9880ff;
+      color: #9880ff;
+      animation: dot-elastic-after 1s infinite linear;
+    }
+
+    @keyframes dot-elastic-before {
+      0% {
+        transform: scale(1, 1);
+      }
+      25% {
+        transform: scale(1, 1.5);
+      }
+      50% {
+        transform: scale(1, 0.67);
+      }
+      75% {
+        transform: scale(1, 1);
+      }
+      100% {
+        transform: scale(1, 1);
+      }
+    }
+    @keyframes dot-elastic {
+      0% {
+        transform: scale(1, 1);
+      }
+      25% {
+        transform: scale(1, 1);
+      }
+      50% {
+        transform: scale(1, 1.5);
+      }
+      75% {
+        transform: scale(1, 1);
+      }
+      100% {
+        transform: scale(1, 1);
+      }
+    }
+    @keyframes dot-elastic-after {
+      0% {
+        transform: scale(1, 1);
+      }
+      25% {
+        transform: scale(1, 1);
+      }
+      50% {
+        transform: scale(1, 0.67);
+      }
+      75% {
+        transform: scale(1, 1.5);
+      }
+      100% {
+        transform: scale(1, 1);
+      }
+    }
+</style>
+
+	<section class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="main-chatbox">
+						<div class="main-chatbox-message" id="messages">
+                {% if messages %}
+                  {% for message in messages %}
+                      {% if message.user_message %}
+                        <div class="mess-user">
+                          <div class="main-mess">
+                            <p>{{ message.user_message }}</p>
+                          </div>
+                          <img src="{% static 'images/user.png' %}" alt="">
+                        </div>
+                        {% endif %}
+
+                        {% if message.ai_message %}
+                          <div class="mess-ai">
+                            <img src="{% static 'images/logo.jpg' %}" alt="">
+                            <div class="main-mess">
+                              <p>{{ message.ai_message }}</p>
+                            </div>
+                          </div>
+                        {% endif %}
+                  {% endfor %}
+
+                {% else %}
+                    <div class="no-message-div" id="no-message">
+                      <div class="no-message-inner">
+                        <img src="{% static 'images/logo_SerenAI.png' %}" alt="">
+                        <h2>How can I help you?</h2>
+                      </div>
+                    </div>
+                {% endif %}
+						</div>
+
+
+						<div class="write-message">
+							<textarea name="query" id="input-query" rows="1" class="write-message-input" role="textbox" contenteditable></textarea>
+							<button type="submit" onclick="send_query(this)" id="#send-query-form" class="mess-send-btn">Send</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	
+
+{% endblock main %}
+
+{% block script %}
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		autosize();
+		function autosize() {
+			var texts = document.querySelectorAll('.write-message-input');
+			texts.forEach(function(text) {
+				text.setAttribute('rows', 1);
+				resize(text);
+			});
+
+			texts.forEach(function(text) {
+				text.addEventListener('input', function() {
+					resize(text);
+				});
+			});
+		}
+
+		function resize(text) {
+			text.style.height = 'auto';
+			text.style.height = text.scrollHeight + 'px';
+		}
+	});
+</script>
+
+
+    <script>
+    const textarea = document.getElementById('input-query');
+
+textarea.addEventListener('keydown', function(event) {
+     if (event.key === 'Enter') {
+         send_query($('#send-query-form'));
+     }
+});
+    let message_body = $('#messages');
+    message_body.animate({
+    scrollTop: $('#messages').prop("scrollHeight")
+  }, 500);
+    let input_message = $('#input-query')
+let send_message_form = $('#send-query-form')
+     function send_query(button){
+        button.disabled = true;
+        let query = input_message.val();
+        message_element = `
+            <div class="mess-user">
+								<div class="main-mess">
+									<p>${query}</p>
+								</div>
+								<img src="{% static 'images/user.png' %}" alt="">
+							</div>
+    `;
+         message_body.append(message_element);
+          ai_response = `
+           <div class="mess-ai" id="loading">
+								<img src="{% static 'images/logo.jpg' %}" alt="">
+								<div class="main-mess">
+									<div class="dot-elastic"></div>
+								</div>
+							</div>
+    `;
+         message_body.append(ai_response);
+         message_body.animate({
+    scrollTop: $('#messages').prop("scrollHeight")
+  }, 500);
+        input_message.val("");
+        let data = {
+            'query': query,
+        }
+        console.log(data)
+        $.ajax({
+      url: '{% url 'query' %}',
+      type: 'post',
+      data: data,
+      success: function(response) {
+        //success call
+          console.log(response)
+          $("#no-message").remove();
+          $("#loading").remove();
+          ai_response = `
+           <div class="mess-ai">
+								<img src="{% static 'images/logo.jpg' %}" alt="">
+								<div class="main-mess">
+									<p>${response.messages}</p>
+								</div>
+							</div>
+    `;
+         message_body.append(ai_response);
+         message_body.animate({
+    scrollTop: $('#messages').prop("scrollHeight")
+  }, 500);
+         button.disabled = false;
+      },
+      error: function (error){
+
+           alert("Somthing wrong happend!!");
+                return;
+      }
+    });
+     }
+
+    </script>
+{% endblock script %}

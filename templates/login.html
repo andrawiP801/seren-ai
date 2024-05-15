@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} Login - SerenAI {% endblock title %}
+
+{% block main %}
+
+	<section class="section-padding">
+		<div class="container">
+			<form method="POST">
+				{% csrf_token %}
+				<div class="row position-relative">
+					<div class="col-md-7 order-1 order-md-0 mt-5 mt-md-0">
+						<div class="auth-form me-0 me-md-5"> 
+							{% if error_message %}
+								<div class="alert alert-danger alert-dismissible fade show" role="alert">
+									<h2 class="password-error">{{ error_message }}</h2>
+									<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+								</div>
+							{% endif %}
+							<div class="login-form">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="single-input">
+											<label for="">Nickname</label>
+											<input type="text" name="username" id="">
+										</div>
+										<div class="single-input">
+											<label for="">Password</label>
+											<input type="password" name="password" id="">
+										</div>
+									</div>
+									<div class="col-md-6 d-block d-md-none d-flex justify-content-end mt-4">
+										<button type="submit" class="submit-btn-2">Continue</button>
+									</div>
+									<div class="col-md-6 d-none d-md-block">
+										<div class="login-logo-img">
+											<img src="{% static 'images/logo.jpg' %}" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5 d-flex align-items-center justify-content-center order-0 order-md-1">
+						<div class="signup-continue-btn">
+							<h2>Log-in</h2>
+							<button type="submit" class="submit-btn-login d-none d-md-block">Continue</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+
+{% endblock main %}

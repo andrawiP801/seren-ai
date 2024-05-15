@@ -1,0 +1,28 @@
+/*Mobile Layout: 320px*/
+@media only screen and (max-width: 767px){
+    .main-header .logo-sec img{
+        width: 100px;
+    }
+    .header-auth .login-btn{
+        padding: 5px 20px;
+        font-size: 25px;
+    }
+    .header-auth .signup-btn{
+        padding: 5px 20px;
+        font-size: 25px;
+        margin-left: 8px;
+    }
+    .signup-continue-btn h2{
+        margin-bottom: 0;
+    }
+    .write-message .mess-send-btn{
+        padding: 8px 30px;
+        font-size: 28px;
+        line-height: 25px;
+    }
+    .write-message .write-message-input{
+        font-size: 20px;
+    }
+
+}
+

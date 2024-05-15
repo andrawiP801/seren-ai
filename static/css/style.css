@@ -1,0 +1,376 @@
+@font-face {
+    font-family: fontTitle;
+    src: url(../fonts/Handpower.ttf);
+}
+@font-face {
+    font-family: fontBody;
+    src: url(../fonts/That-Be-Enough.ttf);
+}
+
+
+/*
+=============================================================================
+>>>> color variable <<<<
+==============================================================================
+*/
+
+
+:root{
+    --primary-color: #a8cbf9;
+    --secondary-color: #a6e2c6;
+    --black-color: #000;
+}
+
+body {
+    font-family: 'fontTitle';
+}
+
+h1,h2{
+    font-family: 'fontTitle';
+}
+
+.container{
+    max-width: 1100px;
+    padding: 0 15px;
+}
+.section-padding{
+    padding: 50px 0;
+}
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
+
+button{
+    border: none;
+}
+
+
+/* ============= HEADER ============== */
+
+header.main-header{
+    background: linear-gradient(to right, #d6b7f8, #d6b7f9);
+    padding: 10px 0;
+}
+.main-header .logo-sec img{
+    width: 150px;
+}
+.header-auth .login-btn{
+    background: #19D8B6;
+    padding: 8px 25px;
+    font-size: 30px;
+    font-family: 'fontBody';
+    color: white;
+    border-radius: 25px;
+}
+.page-title h2{
+    margin-bottom: 0;
+    font-family: 'fontTitle';
+    font-size: 30px;
+    margin-right: 15px;
+}
+.logo-sec{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+.logo-sec a{
+    font-size: 30px;
+    color: #000;
+    line-height: 20px;
+    cursor: pointer;
+}
+.menu-open-div{
+    position: absolute;
+    left: 0;
+    top: 110%;
+    background: var(--secondary-color);
+    padding: 15px;
+    border-radius: 6px;
+}
+.menu-open-div a{
+    font-size: 25px;
+    margin: 0;
+}
+
+.header-auth .signup-btn{
+    background: #864499;
+    padding: 8px 25px;
+    font-size: 30px;
+    font-family: 'fontBody';
+    color: white;
+    border-radius: 25px;
+    margin-left: 15px;
+}
+
+.main-body-content h1{
+    font-family: 'fontTitle';
+    font-size: 60px;
+    font-weight: 600;
+    margin-left: 40px;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+.main-body-content p{
+    font-family: 'fontBody';
+    font-size: 40px;
+    line-height: 45px;
+}
+.main-body-content .info-btn{
+    background: #864499;
+    padding: 2px 25px;
+    font-size: 30px;
+    font-family: 'fontBody';
+    color: white;
+    border-radius: 25px;
+    line-height: 40px;
+    margin-top: 40px;
+}
+.main-body-image {
+    display: flex;
+    margin: auto;
+}
+.main-body-image img{
+    border-radius: 50%;
+    max-width: 400px;
+    width: 100%;
+}
+.main-body-content .moti-phrase{
+    background: #c4f2ff;
+    font-family: 'fontTitle';
+    color: var(--black-color);
+    border-radius: 20px;
+    padding: 35px 20px;
+    margin-top: 50px;
+
+}
+.profile-auth img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.signup-form{
+    background: var(--secondary-color);
+    padding: 20px 10px;
+    border-radius: 20px;
+}
+.signup-form label{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'fontTitle';
+}
+.signup-form input, .signup-form select{
+    width: 100%;
+    background: #fff;
+    border-radius: 25px;
+    padding: 5px 10px;
+    border: none;
+    font-size: 18px;
+    font-family: 'fontTitle';
+}
+.signup-form .single-input{
+    margin-bottom: 10px;
+}
+.signup-logo-img{
+    position: absolute;
+    left: 40%;
+}
+.signup-logo-img img{
+    border-radius: 50%;
+    width: 300px;
+}
+
+.signup-continue-btn h2{
+    font-family: 'fontBody';
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.signup-continue-btn .submit-btn{
+    background: var(--secondary-color);
+    padding: 5px 35px;
+    font-size: 25px;
+    font-family: 'fontBody';
+    color: var(--black-color);
+    border-radius: 25px;
+}
+.submit-btn-2{
+    background: #fff;
+    padding: 5px 35px;
+    font-size: 25px;
+    font-family: 'fontBody';
+    color: var(--black-color);
+    border-radius: 25px;
+}
+.submit-btn-login{
+    background: var(--primary-color);
+    padding: 5px 35px;
+    font-size: 25px;
+    font-family: 'fontBody';
+    color: var(--black-color) !important;
+    border-radius: 25px;
+}
+
+.login-form{
+    background: var(--primary-color);
+    padding: 20px 10px;
+    border-radius: 20px;
+    height: 400px;
+    max-width: 500px;
+}
+
+.login-form label{
+    font-size: 20px;
+    font-family: 'fontTitle';
+    margin-top: 50px;
+}
+.login-form input{
+    width: 100%;
+    background: #fff;
+    border-radius: 25px;
+    padding: 5px 10px;
+    border: none;
+    font-size: 18px;
+    font-family: 'fontTitle';
+}
+.login-form .single-input{
+    margin-bottom: 10px;
+}
+.login-logo-img{
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.login-logo-img img{
+    border-radius: 50%;
+    width: 250px;
+}
+
+/* ========== Main Chat Box Sec ========== */
+
+.main-chatbox{
+    border: 8px solid #d6b7f9;
+    border-radius: 20px;
+    padding: 15px 10px;
+}
+.main-chatbox-message{
+    height: 450px;
+    overflow-y: scroll;
+}
+.main-chatbox .mess-ai{
+    display: flex;
+    gap: 8px;
+    align-items: end;
+    margin: 15px 0;
+}
+.main-chatbox-message::-webkit-scrollbar {
+    display: none;
+}
+.main-chatbox .mess-ai img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.main-chatbox .mess-ai .main-mess{
+    background: #d9d9d9;
+    max-width: 60%;
+    padding: 5px 20px;
+    border-radius: 20px 20px 20px 0;
+}
+.main-chatbox .mess-ai .main-mess p{
+    margin: 0;
+    font-size: 20px;
+    font-family: 'fontTitle';
+}
+
+
+
+.main-chatbox .mess-user{
+    display: flex;
+    gap: 8px;
+    align-items: end;
+    margin: 15px 0;
+    justify-content: flex-end;
+}
+.main-chatbox .mess-user img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.main-chatbox .mess-user .main-mess{
+    background: #d6b7f9;
+    max-width: 60%;
+    padding: 5px 20px;
+    border-radius: 20px 20px 0 20px;
+}
+.main-chatbox .mess-user .main-mess p{
+    margin: 0;
+    font-size: 20px;
+    font-family: 'fontTitle';
+    line-height: 22px;
+}
+
+.write-message{
+    display: flex;
+    gap: 10px;
+    align-items: end;
+    margin: 5px 0;
+}
+.write-message .write-message-input{
+    width: 100%;
+    background: #ffecdb;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-family: 'fontTitle';
+    overflow: hidden;
+}
+.write-message .mess-send-btn{
+    background: #d6b7f9;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 35px;
+    font-size: 35px;
+    line-height: 28px;
+    font-family: 'fontBody';
+}
+
+.password-error{
+    font-size: 20px;
+    margin: 0;
+    color: #000;
+}
+
+.no-message-div{
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+.no-message-inner{
+    border: 1px solid var(--primary-color);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+.no-message-inner img{
+    width: 120px;
+    margin-bottom: 15px;
+}
+.no-message-inner h2{
+    font-size: 25px;
+    line-height: 20px;
+}
