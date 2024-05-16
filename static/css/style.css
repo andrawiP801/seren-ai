@@ -56,7 +56,7 @@ button{
 /* ============= HEADER ============== */
 
 header.main-header{
-    background: linear-gradient(to right, #d6b7f8, #d6b7f9);
+    background: none;
     padding: 10px 0;
 }
 .main-header .logo-sec img{
@@ -139,7 +139,6 @@ header.main-header{
     margin: auto;
 }
 .main-body-image img{
-    border-radius: 50%;
     max-width: 400px;
     width: 100%;
 }
