@@ -32,7 +32,7 @@ h1,h2{
 .container{
     max-width: 1920px;
     max-height: 1080px;
-    padding: 0 15px;
+    padding: 15px, 15px;
 }
 .section-padding{
     padding: 50px 0;
