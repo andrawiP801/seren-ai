@@ -120,7 +120,7 @@
 
                         {% if message.ai_message %}
                           <div class="mess-ai">
-                            <img src="{% static 'images/logo.jpg' %}" alt="">
+                            <img src="{% static 'images/logo.png' %}" alt="">
                             <div class="main-mess">
                               <p>{{ message.ai_message }}</p>
                             </div>
@@ -210,7 +210,7 @@ let send_message_form = $('#send-query-form')
          message_body.append(message_element);
           ai_response = `
            <div class="mess-ai" id="loading">
-								<img src="{% static 'images/logo.jpg' %}" alt="">
+								<img src="{% static 'images/logo.png' %}" alt="">
 								<div class="main-mess">
 									<div class="dot-elastic"></div>
 								</div>
@@ -236,7 +236,7 @@ let send_message_form = $('#send-query-form')
           $("#loading").remove();
           ai_response = `
            <div class="mess-ai">
-								<img src="{% static 'images/logo.jpg' %}" alt="">
+								<img src="{% static 'images/logo.png' %}" alt="">
 								<div class="main-mess">
 									<p>${response.messages}</p>
 								</div>
