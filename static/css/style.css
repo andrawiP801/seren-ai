@@ -111,8 +111,8 @@ header.main-header{
     margin-left: 15px;
 }
 
-.main-body-content h1{
-    font-family: 'fontTitle';
+.main-body-content h1 {
+    font-family: 'Montaser Arabic', sans-serif; /* Añadí una fuente de respaldo por si acaso */
     font-size: 60px;
     font-weight: 600;
     margin-left: 40px;
