@@ -182,6 +182,14 @@ header.main-header{
     font-size: 16px;
     font-family: 'Montaser Arabic', sans-serif;
 }
+.signup-form input.password-field {
+    width: 100%; 
+}
+
+.signup-form input.password-field {
+    width: calc(100% + 20px); 
+}
+
 .signup-form .single-input{
     margin-bottom: 10px;
 }
