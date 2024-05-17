@@ -171,7 +171,7 @@ header.main-header{
     text-align: center;
     font-size: 20px;
     color: #864499;
-    font-family: 'fontTitle';
+    font-family: 'Montaser Arabic', sans-serif;
 }
 .signup-form input, .signup-form select{
     width: 100%;
@@ -179,9 +179,10 @@ header.main-header{
     border-radius: 25px;
     padding: 5px 10px;
     border-style: solid;
-    border: #19D8B6;
+    border-color: #19D8B6;
+    border: 2px;
     font-size: 18px;
-    font-family: 'fontTitle';
+    font-family: 'Montaser Arabic', sans-serif;
 }
 .signup-form .single-input{
     margin-bottom: 10px;
@@ -201,7 +202,7 @@ header.main-header{
 }
 .signup-continue-btn .submit-btn{
     background: #19D8B6;
-    padding: 5px 5px;
+    padding: 5px 35px;
     font-size: 25px;
     font-family: 'Montaser Arabic', sans-serif;
     color: white;
@@ -234,7 +235,7 @@ header.main-header{
 
 .login-form label{
     font-size: 20px;
-    font-family: 'fontTitle';
+    font-family: 'Montaser Arabic', sans-serif;
     margin-top: 50px;
 }
 .login-form input{
