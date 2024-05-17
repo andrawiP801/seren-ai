@@ -187,7 +187,7 @@ header.main-header{
 }
 
 .signup-form input.password-field {
-    width: calc(100% + 20px); 
+    width: calc(100% + 100px); 
 }
 
 .signup-form .single-input{
@@ -195,7 +195,7 @@ header.main-header{
 }
 .signup-logo-img{
     position: absolute;
-    left: 40%;
+    left: 60%;
 }
 .signup-logo-img img{
     width: 300px;
