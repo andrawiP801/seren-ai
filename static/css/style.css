@@ -22,11 +22,11 @@
 }
 
 body {
-    font-family: 'fontTitle';
+    font-family: 'Montaser Arabic', sans-serif;
 }
 
 h1,h2{
-    font-family: 'fontTitle';
+    font-family: 'Montaser Arabic', sans-serif;
 }
 
 .container{
@@ -72,7 +72,8 @@ header.main-header{
 }
 .page-title h2{
     margin-bottom: 0;
-    font-family: 'fontTitle';
+    font-family: 'Montaser Arabic', sans-serif;
+    color:#864499;
     font-size: 30px;
     margin-right: 15px;
 }
@@ -145,9 +146,9 @@ header.main-header{
     width: 100%;
 }
 .main-body-content .moti-phrase{
-    background: #c4f2ff;
-    font-family: 'fontTitle';
-    color: var(--black-color);
+    background: #864499;
+    font-family: 'Montaser Arabic', sans-serif;
+    color: white;
     border-radius: 20px;
     padding: 35px 20px;
     margin-top: 50px;
@@ -193,7 +194,7 @@ header.main-header{
 }
 
 .signup-continue-btn h2{
-    font-family: 'fontBody';
+    font-family: 'Montaser Arabic', sans-serif;
     font-size: 60px;
     margin-bottom: 30px;
 }
@@ -201,7 +202,7 @@ header.main-header{
     background: var(--secondary-color);
     padding: 5px 35px;
     font-size: 25px;
-    font-family: 'fontBody';
+    font-family: 'Montaser Arabic', sans-serif;
     color: var(--black-color);
     border-radius: 25px;
 }
@@ -209,7 +210,7 @@ header.main-header{
     background: #fff;
     padding: 5px 35px;
     font-size: 25px;
-    font-family: 'fontBody';
+    font-family: 'Montaser Arabic', sans-serif;
     color: var(--black-color);
     border-radius: 25px;
 }
@@ -217,7 +218,7 @@ header.main-header{
     background: var(--primary-color);
     padding: 5px 35px;
     font-size: 25px;
-    font-family: 'fontBody';
+    font-family: 'Montaser Arabic', sans-serif;
     color: var(--black-color) !important;
     border-radius: 25px;
 }
