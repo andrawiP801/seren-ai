@@ -65,7 +65,7 @@ header.main-header{
 .header-auth .login-btn{
     background: #19D8B6;
     padding: 5px 25px;
-    font-size: 15px;
+    font-size: 18px;
     font-family: 'Montaser Arabic', sans-serif;
     color: white;
     border-radius: 25px;
@@ -104,7 +104,7 @@ header.main-header{
 .header-auth .signup-btn{
     background: #864499;
     padding: 8px 25px;
-    font-size: 30px;
+    font-size: 18px;
     font-family: 'Montaser Arabic', sans-serif;
     color: white;
     border-radius: 25px;
@@ -121,7 +121,7 @@ header.main-header{
     color: #864499;
 }
 .main-body-content p {
-    font-family: 'fontBody';
+    font-family: 'Montaser Arabic', sans-serif;
     font-size: 40px;
     line-height: 45px;
     text-align: justify;
@@ -129,7 +129,7 @@ header.main-header{
 .main-body-content .info-btn{
     background: #864499;
     padding: 2px 25px;
-    font-size: 30px;
+    font-size: 18px;
     font-family: 'Montaser Arabic', sans-serif;
     color: white;
     border-radius: 25px;
