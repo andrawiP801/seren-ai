@@ -1,5 +1,5 @@
 /*Mobile Layout: 320px*/
-@media only screen and (max-width: 1600px){
+@media only screen and (max-width: 767px){
     .main-header .logo-sec img{
         width: 100px;
     }
