@@ -119,10 +119,11 @@ header.main-header{
     letter-spacing: 5px;
     margin-bottom: 15px;
 }
-.main-body-content p{
+.main-body-content p {
     font-family: 'fontBody';
     font-size: 40px;
     line-height: 45px;
+    text-align: justify;
 }
 .main-body-content .info-btn{
     background: #864499;
