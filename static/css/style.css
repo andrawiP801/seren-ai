@@ -178,6 +178,7 @@ header.main-header{
     background: #fff;
     border-radius: 25px;
     padding: 5px 10px;
+    border-style: solid;
     border: #19D8B6;
     font-size: 18px;
     font-family: 'fontTitle';
