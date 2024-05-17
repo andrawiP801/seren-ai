@@ -162,7 +162,7 @@ header.main-header{
     cursor: pointer;
 }
 .signup-form{
-    background: var(--secondary-color);
+    background: none;
     padding: 20px 10px;
     border-radius: 20px;
 }
@@ -198,11 +198,11 @@ header.main-header{
     margin-bottom: 30px;
 }
 .signup-continue-btn .submit-btn{
-    background: var(--secondary-color);
-    padding: 5px 35px;
+    background: #19D8B6;
+    padding: 5px 5px;
     font-size: 25px;
     font-family: 'Montaser Arabic', sans-serif;
-    color: var(--black-color);
+    color: white;
     border-radius: 25px;
 }
 .submit-btn-2{
