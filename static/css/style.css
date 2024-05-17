@@ -66,7 +66,7 @@ header.main-header{
     background: #19D8B6;
     padding: 5px 25px;
     font-size: 30px;
-    font-family: 'fontBody';
+    font-family: 'Montaser Arabic', sans-serif;
     color: white;
     border-radius: 25px;
 }
@@ -105,14 +105,14 @@ header.main-header{
     background: #864499;
     padding: 8px 25px;
     font-size: 30px;
-    font-family: 'fontBody';
+    font-family: 'Montaser Arabic', sans-serif;
     color: white;
     border-radius: 25px;
     margin-left: 15px;
 }
 
 .main-body-content h1 {
-    font-family: 'Montaser Arabic', sans-serif; /* Añadí una fuente de respaldo por si acaso */
+    font-family: 'Montaser Arabic', sans-serif;
     font-size: 60px;
     font-weight: 600;
     margin-left: 40px;
@@ -130,7 +130,7 @@ header.main-header{
     background: #864499;
     padding: 2px 25px;
     font-size: 30px;
-    font-family: 'fontBody';
+    font-family: 'Montaser Arabic', sans-serif;
     color: white;
     border-radius: 25px;
     line-height: 40px;
