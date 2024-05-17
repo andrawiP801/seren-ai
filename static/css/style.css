@@ -182,6 +182,8 @@ header.main-header{
     font-family: 'fontTitle';
 }
 .signup-form .single-input{
+    border-style: solid;
+    border-color: #A6E2C5;
     margin-bottom: 10px;
 }
 .signup-logo-img{
