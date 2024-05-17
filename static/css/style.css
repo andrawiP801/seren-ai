@@ -31,6 +31,7 @@ h1,h2{
 
 .container{
     max-width: 1920px;
+    max-height: 1080px;
     padding: 0 15px;
 }
 .section-padding{
