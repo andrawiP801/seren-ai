@@ -7,13 +7,7 @@
     src: url(../fonts/That-Be-Enough.ttf);
 }
 
-
-/*
-=============================================================================
->>>> color variable <<<<
-==============================================================================
-*/
-
+/* >>>> color variable <<<< */
 
 :root{
     --primary-color: #a8cbf9;
@@ -31,10 +25,13 @@ h1,h2{
 
 .container{
     max-width: 1280px;
-    padding:   15px;
+    padding: 15px;
 }
 .section-padding{
     padding: 50px 0;
+}
+.index-section {
+    margin: 0 30px; /* Ajusta el valor según sea necesario */
 }
 a{
     text-decoration: none;
@@ -52,8 +49,7 @@ button{
     border: none;
 }
 
-
-/* ============= HEADER ============== */
+/* HEADER */
 
 header.main-header{
     background: none;
@@ -266,7 +262,7 @@ header.main-header{
     width: 250px;
 }
 
-/* ========== Main Chat Box Sec ========== */
+/* Main Chat Box Sec */
 
 .main-chatbox{
     border: 8px solid #d6b7f9;
