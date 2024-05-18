@@ -9,7 +9,7 @@
 
 /* >>>> color variable <<<< */
 
-:root{
+:root {
     --primary-color: #a8cbf9;
     --secondary-color: #a6e2c6;
     --black-color: #000;
@@ -19,46 +19,52 @@ body {
     font-family: 'Montaser Arabic', sans-serif;
 }
 
-h1,h2{
+h1, h2 {
     font-family: 'Montaser Arabic', sans-serif;
 }
 
-.container{
+.container {
     max-width: 1280px;
     padding: 15px;
 }
-.section-padding{
+
+.section-padding {
     padding: 50px 0;
 }
+
 .index-section {
-    margin: 0 30px; 
+    margin: 0 30px;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-input:focus, textarea:focus{
+input:focus,
+textarea:focus {
     outline: none;
 }
 
-button{
+button {
     border: none;
 }
 
 /* HEADER */
 
-header.main-header{
+header.main-header {
     background: none;
     padding: 10px 0;
 }
-.main-header .logo-sec img{
+
+.main-header .logo-sec img {
     width: 150px;
 }
-.header-auth .login-btn{
+
+.header-auth .login-btn {
     background: #19D8B6;
     padding: 5px 25px;
     font-size: 18px;
@@ -66,26 +72,30 @@ header.main-header{
     color: white;
     border-radius: 25px;
 }
-.page-title h2{
+
+.page-title h2 {
     margin-bottom: 0;
     font-family: 'Montaser Arabic', sans-serif;
-    color:#864499;
+    color: #864499;
     font-size: 30px;
     margin-right: 15px;
 }
-.logo-sec{
+
+.logo-sec {
     display: flex;
     align-items: center;
     gap: 20px;
     position: relative;
 }
-.logo-sec a{
+
+.logo-sec a {
     font-size: 30px;
     color: #000;
     line-height: 20px;
     cursor: pointer;
 }
-.menu-open-div{
+
+.menu-open-div {
     position: absolute;
     left: 0;
     top: 110%;
@@ -93,12 +103,13 @@ header.main-header{
     padding: 15px;
     border-radius: 6px;
 }
-.menu-open-div a{
+
+.menu-open-div a {
     font-size: 25px;
     margin: 0;
 }
 
-.header-auth .signup-btn{
+.header-auth .signup-btn {
     background: #864499;
     padding: 5px 25px;
     font-size: 18px;
@@ -117,13 +128,15 @@ header.main-header{
     margin-bottom: 15px;
     color: #864499;
 }
+
 .main-body-content p {
     font-family: 'Montaser Arabic', sans-serif;
     font-size: 20px;
     line-height: 45px;
     text-align: justify;
 }
-.main-body-content .info-btn{
+
+.main-body-content .info-btn {
     background: #864499;
     padding: 2px 20px;
     font-size: 18px;
@@ -133,43 +146,50 @@ header.main-header{
     line-height: 40px;
     margin-top: 35px;
 }
+
 .main-body-image {
     display: flex;
     margin: auto;
 }
-.main-body-image img{
+
+.main-body-image img {
     max-width: 400px;
     width: 100%;
 }
-.main-body-content .moti-phrase{
+
+.main-body-content .moti-phrase {
     background: #864499;
     font-family: 'Montaser Arabic', sans-serif;
     color: white;
     border-radius: 20px;
     padding: 35px 20px;
     margin-top: 50px;
-
 }
-.profile-auth img{
+
+.profile-auth img {
     width: 50px;
     height: 50px;
     object-fit: cover;
     border-radius: 50%;
     cursor: pointer;
 }
-.signup-form{
+
+.signup-form {
     background: black;
     padding: 20px 10px;
     border-radius: 20px;
 }
-.signup-form label{
+
+.signup-form label {
     width: 100%;
     text-align: center;
     font-size: 18px;
     color: #864499;
     font-family: 'Montaser Arabic', sans-serif;
 }
-.signup-form input, .signup-form select {
+
+.signup-form input,
+.signup-form select {
     width: 100%;
     background: #fff;
     border-radius: 25px;
@@ -180,27 +200,35 @@ header.main-header{
     cursor: text;
     pointer-events: auto;
 }
+
 .signup-form input.password-field {
-    width: 100%; /* Asegúrate de que los campos de contraseña ocupen todo el ancho */
+    width: 100%;
 }
 
-.signup-form .single-input{
+.signup-form .single-input {
     margin-bottom: 10px;
 }
-.signup-logo-img{
+
+.left-align-label label {
+    text-align: left;
+}
+
+.signup-logo-img {
     position: absolute;
     left: 65%;
 }
-.signup-logo-img img{
+
+.signup-logo-img img {
     width: 500px;
 }
 
-.signup-continue-btn h2{
+.signup-continue-btn h2 {
     font-family: 'Montaser Arabic', sans-serif;
     font-size: 80px;
     margin-bottom: 30px;
 }
-.signup-continue-btn .submit-btn{
+
+.signup-continue-btn .submit-btn {
     background: #19D8B6;
     padding: 5px 35px;
     font-size: 25px;
@@ -208,7 +236,8 @@ header.main-header{
     color: white;
     border-radius: 25px;
 }
-.submit-btn-2{
+
+.submit-btn-2 {
     background: #fff;
     padding: 5px 35px;
     font-size: 25px;
@@ -216,7 +245,8 @@ header.main-header{
     color: var(--black-color);
     border-radius: 25px;
 }
-.submit-btn-login{
+
+.submit-btn-login {
     background: #19D8B6;
     padding: 5px 35px;
     font-size: 25px;
@@ -225,7 +255,7 @@ header.main-header{
     border-radius: 25px;
 }
 
-.login-form{
+.login-form {
     background: none;
     padding: 20px 10px;
     border-radius: 20px;
@@ -233,13 +263,14 @@ header.main-header{
     max-width: 1000px;
 }
 
-.login-form label{
+.login-form label {
     font-size: 20px;
     font-family: 'Montaser Arabic', sans-serif;
     color: #864499;
     margin-top: 50px;
 }
-.login-form input{
+
+.login-form input {
     width: 100%;
     background: #fff;
     border-radius: 25px;
@@ -250,90 +281,103 @@ header.main-header{
     cursor: text;
     pointer-events: auto;
 }
-.login-form .single-input{
+
+.login-form .single-input {
     margin-bottom: 10px;
 }
-.login-logo-img{
+
+.login-logo-img {
     position: absolute;
     left: 35%;
     top: 50%;
     transform: translateY(-50%);
 }
-.login-logo-img img{
+
+.login-logo-img img {
     width: 250px;
 }
 
 /* Main Chat Box Sec */
 
-.main-chatbox{
+.main-chatbox {
     border: 8px solid #d6b7f9;
     border-radius: 20px;
     padding: 15px 10px;
 }
-.main-chatbox-message{
+
+.main-chatbox-message {
     height: 450px;
     overflow-y: scroll;
 }
-.main-chatbox .mess-ai{
+
+.main-chatbox .mess-ai {
     display: flex;
     gap: 8px;
     align-items: end;
     margin: 15px 0;
 }
+
 .main-chatbox-message::-webkit-scrollbar {
     display: none;
 }
-.main-chatbox .mess-ai img{
+
+.main-chatbox .mess-ai img {
     width: 25px;
     height: 25px;
     border-radius: 50%;
     object-fit: cover;
 }
-.main-chatbox .mess-ai .main-mess{
+
+.main-chatbox .mess-ai .main-mess {
     background: #d9d9d9;
     max-width: 60%;
     padding: 5px 20px;
     border-radius: 20px 20px 20px 0;
 }
-.main-chatbox .mess-ai .main-mess p{
+
+.main-chatbox .mess-ai .main-mess p {
     margin: 0;
     font-size: 20px;
     font-family: 'fontTitle';
 }
 
-.main-chatbox .mess-user{
+.main-chatbox .mess-user {
     display: flex;
     gap: 8px;
     align-items: end;
     margin: 15px 0;
     justify-content: flex-end;
 }
-.main-chatbox .mess-user img{
+
+.main-chatbox .mess-user img {
     width: 25px;
     height: 25px;
     border-radius: 50%;
     object-fit: cover;
 }
-.main-chatbox .mess-user .main-mess{
+
+.main-chatbox .mess-user .main-mess {
     background: #d6b7f9;
     max-width: 60%;
     padding: 5px 20px;
     border-radius: 20px 20px 0 20px;
 }
-.main-chatbox .mess-user .main-mess p{
+
+.main-chatbox .mess-user .main-mess p {
     margin: 0;
     font-size: 20px;
     font-family: 'fontTitle';
     line-height: 22px;
 }
 
-.write-message{
+.write-message {
     display: flex;
     gap: 10px;
     align-items: end;
     margin: 5px 0;
 }
-.write-message .write-message-input{
+
+.write-message .write-message-input {
     width: 100%;
     background: #ffecdb;
     border: none;
@@ -345,7 +389,8 @@ header.main-header{
     cursor: text;
     pointer-events: auto;
 }
-.write-message .mess-send-btn{
+
+.write-message .mess-send-btn {
     background: #d6b7f9;
     border: none;
     border-radius: 25px;
@@ -355,28 +400,31 @@ header.main-header{
     font-family: 'fontBody';
 }
 
-.password-error{
+.password-error {
     font-size: 20px;
     margin: 0;
     color: #000;
 }
 
-.no-message-div{
+.no-message-div {
     display: grid;
     place-items: center;
     height: 100%;
 }
-.no-message-inner{
+
+.no-message-inner {
     border: 1px solid var(--primary-color);
     text-align: center;
     padding: 20px;
     border-radius: 10px;
 }
-.no-message-inner img{
+
+.no-message-inner img {
     width: 120px;
     margin-bottom: 15px;
 }
-.no-message-inner h2{
+
+.no-message-inner h2 {
     font-size: 25px;
     line-height: 20px;
 }
