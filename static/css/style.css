@@ -180,8 +180,9 @@ header.main-header{
     cursor: text;
     pointer-events: auto;
 }
+
 .signup-form input.password-field {
-    width: 100%; 
+    width: 100%;
 }
 
 .signup-form .single-input{
