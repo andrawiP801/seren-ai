@@ -232,7 +232,7 @@ header.main-header{
     padding: 20px 10px;
     border-radius: 20px;
     height: 400px;
-    max-width: 500px;
+    max-width: 1000px;
 }
 
 .login-form label{
