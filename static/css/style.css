@@ -180,9 +180,8 @@ header.main-header{
     cursor: text;
     pointer-events: auto;
 }
-
 .signup-form input.password-field {
-    width: 100%;
+    width: 100%; /* Asegúrate de que los campos de contraseña ocupen todo el ancho */
 }
 
 .signup-form .single-input{
@@ -301,8 +300,6 @@ header.main-header{
     font-size: 20px;
     font-family: 'fontTitle';
 }
-
-
 
 .main-chatbox .mess-user{
     display: flex;
