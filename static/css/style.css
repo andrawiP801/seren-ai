@@ -219,16 +219,16 @@ header.main-header{
     border-radius: 25px;
 }
 .submit-btn-login{
-    background: var(--primary-color);
+    background: #19D8B6;
     padding: 5px 35px;
     font-size: 25px;
     font-family: 'Montaser Arabic', sans-serif;
-    color: var(--black-color) !important;
+    color: white;
     border-radius: 25px;
 }
 
 .login-form{
-    background: var(--primary-color);
+    background: none;
     padding: 20px 10px;
     border-radius: 20px;
     height: 400px;
@@ -238,6 +238,7 @@ header.main-header{
 .login-form label{
     font-size: 20px;
     font-family: 'Montaser Arabic', sans-serif;
+    color: #864499;
     margin-top: 50px;
 }
 .login-form input{
@@ -245,9 +246,9 @@ header.main-header{
     background: #fff;
     border-radius: 25px;
     padding: 5px 10px;
-    border: none;
+    border: 2px solid #19D8B6;
     font-size: 18px;
-    font-family: 'fontTitle';
+    font-family: 'Montaser Arabic', sans-serif;
 }
 .login-form .single-input{
     margin-bottom: 10px;
