@@ -161,6 +161,7 @@ header.main-header{
     background: none;
     padding: 20px 10px;
     border-radius: 20px;
+    max-width: 1500px;
 }
 .signup-form label{
     width: 100%;
@@ -178,10 +179,6 @@ header.main-header{
     font-size: 16px;
     font-family: 'Montaser Arabic', sans-serif;
 }
-.signup-form input.password-field {
-    width: 100%; 
-}
-
 .signup-form input.password-field {
     width: calc(100% + 335px); 
 }
