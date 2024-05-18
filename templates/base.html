@@ -23,7 +23,7 @@
 									<i class="fa-solid fa-list menu-ais"></i>
 								</a>
 								<div class="menu-open-div d-none" id="menu-open-div">
-									<a class="" href="{% url 'chat' %}">Chat with AI</a>
+									<a class="" href="{% url 'chat' %}">Chatea con Seren</a>
 								</div>
 							{% endif %}
 							<a href="{% url 'home' %}">
@@ -39,14 +39,14 @@
 							<div class="header-auth">
 								<div class="profile-auth">
 									<img src="{% static 'images/user.png' %}" alt="">
-									<a href="{% url 'logout' %}" class="login-btn ms-4">Log-out</a>
+									<a href="{% url 'logout' %}" class="login-btn ms-4">Cerrar Sesion</a>
 								</div>
 							</div>
 						{% else %}
 							<div class="header-auth">
 								<div class="login-auth">
-									<a href="{% url 'login' %}" class="login-btn">Log in</a>
-									<a href="{% url 'signup' %}" class="signup-btn">Sign up</a>
+									<a href="{% url 'login' %}" class="login-btn">Iniciar Sesion</a>
+									<a href="{% url 'signup' %}" class="signup-btn">Registrarse</a>
 								</div>
 							</div>
 						{% endif %}
