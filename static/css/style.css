@@ -210,7 +210,7 @@ header.main-header {
 }
 
 .left-align-label label {
-    text-align: left;
+    text-align: (left + 5px);
 }
 
 .signup-logo-img {
