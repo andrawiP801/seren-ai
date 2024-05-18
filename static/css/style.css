@@ -177,6 +177,8 @@ header.main-header{
     border: 2px solid #19D8B6;
     font-size: 16px;
     font-family: 'Montaser Arabic', sans-serif;
+    cursor: text;
+    pointer-events: auto;
 }
 .signup-form input.password-field {
     width: calc(100% + 335px); 
@@ -245,6 +247,8 @@ header.main-header{
     border: 2px solid #19D8B6;
     font-size: 18px;
     font-family: 'Montaser Arabic', sans-serif;
+    cursor: text;
+    pointer-events: auto;
 }
 .login-form .single-input{
     margin-bottom: 10px;
@@ -340,6 +344,8 @@ header.main-header{
     font-size: 20px;
     font-family: 'fontTitle';
     overflow: hidden;
+    cursor: text;
+    pointer-events: auto;
 }
 .write-message .mess-send-btn{
     background: #d6b7f9;
