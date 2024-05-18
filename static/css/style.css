@@ -209,8 +209,9 @@ header.main-header {
     margin-bottom: 10px;
 }
 
-.left-align-label label {
-    text-align: (left + 5px);
+.signup-form .single-input.password-input label {
+    text-align: left;
+    margin-left: 5px;
 }
 
 .signup-logo-img {
