@@ -181,7 +181,7 @@ header.main-header{
     pointer-events: auto;
 }
 .signup-form input.password-field {
-    width: calc(100% + 335px); 
+    width: 100%; 
 }
 
 .signup-form .single-input{
