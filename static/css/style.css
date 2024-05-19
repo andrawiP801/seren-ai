@@ -326,6 +326,10 @@ header.main-header {
     width: 400px;
 }
 
+.form-container {
+    margin-left: 30px; /* Ajusta el valor según sea necesario */
+}
+
 /* Main Chat Box Sec */
 
 .main-chatbox {
