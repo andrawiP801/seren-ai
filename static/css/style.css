@@ -183,7 +183,7 @@ header.main-header {
     font-family: Arial, sans-serif; /* Familia de fuente */
     font-size: 24px; /* Tamaño de fuente más grande */
     text-align: center; /* Alineación del texto */
-    margin-bottom: 10px; /* Reducir el margen inferior del botón */
+    margin-bottom: 5px; /* Reducir el margen inferior del botón */
 }
 
 .bubble-button::after {
