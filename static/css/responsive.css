@@ -1,28 +1,40 @@
-/*Mobile Layout: 320px*/
-@media only screen and (max-width: 767px){
-    .main-header .logo-sec img{
+/* Mobile Layout: 320px */
+@media only screen and (max-width: 767px) {
+    .main-header .logo-sec img {
         width: 100px;
     }
-    .header-auth .login-btn{
+    .header-auth .login-btn {
         padding: 5px 20px;
-        font-size: 25px;
+        font-size: 14px;
     }
-    .header-auth .signup-btn{
+    .header-auth .signup-btn {
         padding: 5px 20px;
-        font-size: 25px;
+        font-size: 14px;
         margin-left: 8px;
     }
-    .signup-continue-btn h2{
+    .signup-continue-btn h2 {
         margin-bottom: 0;
     }
-    .write-message .mess-send-btn{
+    .write-message .mess-send-btn {
         padding: 8px 30px;
         font-size: 28px;
         line-height: 25px;
     }
-    .write-message .write-message-input{
+    .write-message .write-message-input {
         font-size: 20px;
     }
 
-}
+    /* Ajustar el formulario de registro */
+    .signup-continue-btn {
+        margin-top: 20px; /* Espacio entre el formulario y el botón "Continuar" */
+        order: 2; /* Asegurar que el botón "Continuar" esté debajo del formulario */
+    }
 
+    .signup-form {
+        order: 1; /* Asegurar que el formulario esté arriba del botón "Continuar" */
+    }
+
+    .signup-logo-img {
+        display: none; /* Ocultar la imagen en pantallas pequeñas */
+    }
+}
