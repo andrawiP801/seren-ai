@@ -181,7 +181,7 @@ header.main-header {
     border-radius: 30px; /* Bordes redondeados */
     position: relative; /* Posicionamiento relativo para el triángulo */
     font-family: Arial, sans-serif; /* Familia de fuente */
-    font-size: 24px; /* Tamaño de fuente más grande */
+    font-size: 30px; /* Tamaño de fuente más grande */
     text-align: center; /* Alineación del texto */
 }
 
@@ -253,7 +253,7 @@ header.main-header {
 .signup-continue-btn h2 {
     font-family: 'Montaser Arabic', sans-serif;
     font-size: 80px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .signup-continue-btn .submit-btn {
