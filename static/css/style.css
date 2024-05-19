@@ -183,7 +183,6 @@ header.main-header {
     font-family: Arial, sans-serif; /* Familia de fuente */
     font-size: 24px; /* Tamaño de fuente más grande */
     text-align: center; /* Alineación del texto */
-    margin-bottom: 20px; /* Ajustar el margen inferior del botón */
 }
 
 .bubble-button::after {
@@ -198,12 +197,10 @@ header.main-header {
     border-right: 20px solid transparent;
     border-top: 20px solid #864499; /* Color del triángulo */
 }
-
 .signup-form {
     background: none;
-    padding: 0 10px; /* Reducir el padding superior del formulario */
+    padding: 20px 10px;
     border-radius: 20px;
-    margin-top: -10px; /* Ajustar margen superior para reducir el espacio */
 }
 
 .signup-form label {
@@ -237,26 +234,27 @@ header.main-header {
 
 .signup-form .single-input.password-input label {
     text-align: left;
-    margin-left: 5px; /* Ajustar margen izquierdo */
+    margin-left: 20px;
 }
 
 .signup-logo-img {
-    width: 300px; /* Ajustar tamaño de la imagen */
+    position: absolute;
+    left: 65%;
 }
 
 .signup-logo-img img {
-    width: 100%; /* Ajustar tamaño de la imagen */
+    width: 500px;
 }
 
 .signup-continue-btn h2 {
     font-family: 'Montaser Arabic', sans-serif;
     font-size: 80px;
-    margin-bottom: 10px; /* Reducir el margen inferior del heading */
+    margin-bottom: 30px;
 }
 
 .signup-continue-btn .submit-btn {
     background: #19D8B6;
-    padding: 10px 40px; /* Ajustar padding */
+    padding: 5px 35px;
     font-size: 25px;
     font-family: 'Montaser Arabic', sans-serif;
     color: white;
