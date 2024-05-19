@@ -17,6 +17,8 @@
 
 body {
     font-family: 'Montaser Arabic', sans-serif;
+    margin: 0; /* Asegúrate de que no haya margen adicional en el body */
+    padding: 0; /* Asegúrate de que no haya padding adicional en el body */
 }
 
 h1, h2 {
@@ -25,11 +27,11 @@ h1, h2 {
 
 .container {
     max-width: 1280px;
-    padding: 15px;
+    padding: 0 15px; /* Ajustar padding según sea necesario */
 }
 
 .section-padding {
-    padding: 50px 0;
+    padding: 30px 0; /* Reducir padding superior e inferior */
 }
 
 .index-section {
@@ -181,7 +183,7 @@ header.main-header {
     border-radius: 30px; /* Bordes redondeados */
     position: relative; /* Posicionamiento relativo para el triángulo */
     font-family: Arial, sans-serif; /* Familia de fuente */
-    font-size: 30px; /* Tamaño de fuente más grande */
+    font-size: 24px; /* Tamaño de fuente más grande */
     text-align: center; /* Alineación del texto */
 }
 
@@ -197,6 +199,7 @@ header.main-header {
     border-right: 20px solid transparent;
     border-top: 20px solid #864499; /* Color del triángulo */
 }
+
 .signup-form {
     background: none;
     padding: 20px 10px;
@@ -258,7 +261,7 @@ header.main-header {
 
 .signup-continue-btn .submit-btn {
     background: #19D8B6;
-    padding: 0px 35px;
+    padding: 5px 35px;
     font-size: 25px;
     font-family: 'Montaser Arabic', sans-serif;
     color: white;
@@ -468,5 +471,5 @@ header.main-header {
 }
 
 .signup-logo-img img {
-    width: 400px; /* Ajusta el tamaño de la imagen según sea necesario */
+    width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
 }
