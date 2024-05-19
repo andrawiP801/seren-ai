@@ -24,8 +24,8 @@
         font-size: 20px;
     }
 
-    /* Ajustar el formulario de registro */
-    .signup-continue-container {
+    /* Ajustar el formulario de registro y login */
+    .signup-continue-container, .login-continue-container {
         margin-top: 20px; /* Espacio entre el formulario y el botón "Continuar" */
         order: 2; /* Asegurar que el botón "Continuar" esté debajo del formulario */
         width: 100%; /* Asegurar que el botón ocupe todo el ancho del contenedor */
@@ -33,15 +33,15 @@
         justify-content: center;
     }
 
-    .signup-form-container {
+    .signup-form-container, .login-form-container {
         order: 1; /* Asegurar que el formulario esté arriba del botón "Continuar" */
     }
 
-    .signup-logo-img {
+    .signup-logo-img, .login-logo-img {
         display: none; /* Ocultar la imagen en pantallas pequeñas */
     }
 
-    .submit-btn {
+    .submit-btn, .submit-btn-login {
         width: 100%; /* Asegurar que el botón ocupe todo el ancho en pantallas pequeñas */
     }
 }
