@@ -237,15 +237,17 @@ header.main-header {
     margin-left: 20px;
 }
 
+.signup-continue-btn {
+    text-align: center;
+}
+
 .signup-logo-img {
-    position: relative; /* Cambiado a relativo para el posicionamiento con respecto a su contenedor */
-    width: 100%; /* Asegura que la imagen no se desborde del contenedor */
-    text-align: center; /* Centra la imagen */
+    text-align: center;
+    margin-top: 20px; /* Espacio entre el botón y la imagen */
 }
 
 .signup-logo-img img {
     width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
-    margin-top: 20px; /* Espacio entre el botón y la imagen */
 }
 
 .signup-continue-btn h2 {
@@ -455,12 +457,16 @@ header.main-header {
     line-height: 20px;
 }
 
-.signup-logo-img {
-    width: 100%;
+/* Ajustes específicos para el formulario de registro */
+.signup-continue-btn {
     text-align: center;
+}
+
+.signup-logo-img {
+    text-align: center;
+    margin-top: 20px; /* Espacio entre el botón y la imagen */
 }
 
 .signup-logo-img img {
     width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
-    margin-top: 20px; /* Espacio entre el botón y la imagen */
 }
