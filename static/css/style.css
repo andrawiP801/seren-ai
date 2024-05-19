@@ -241,13 +241,11 @@ header.main-header {
 }
 
 .signup-logo-img {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 300px; /* Ajustar tamaño de la imagen */
 }
 
 .signup-logo-img img {
-    width: 250px; /* Ajustar el tamaño de la imagen */
+    width: 100%; /* Ajustar tamaño de la imagen */
 }
 
 .signup-continue-btn h2 {
@@ -258,7 +256,7 @@ header.main-header {
 
 .signup-continue-btn .submit-btn {
     background: #19D8B6;
-    padding: 5px 35px;
+    padding: 10px 40px; /* Ajustar padding */
     font-size: 25px;
     font-family: 'Montaser Arabic', sans-serif;
     color: white;
