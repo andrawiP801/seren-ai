@@ -253,12 +253,12 @@ header.main-header {
 .signup-continue-btn h2 {
     font-family: 'Montaser Arabic', sans-serif;
     font-size: 80px;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
 }
 
 .signup-continue-btn .submit-btn {
     background: #19D8B6;
-    padding: 5px 35px;
+    padding: 0px 35px;
     font-size: 25px;
     font-family: 'Montaser Arabic', sans-serif;
     color: white;
