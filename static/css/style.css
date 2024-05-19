@@ -158,6 +158,11 @@ header.main-header {
     margin-top: 35px;
 }
 
+.main-body-content img{
+    max-width: 400px;
+    width: 100%;
+}
+
 .main-body-image {
     display: flex;
     margin: auto;
