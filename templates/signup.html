@@ -4,94 +4,95 @@
 {% block title %} Signup - SerenAI {% endblock title %}
 
 {% block main %}
-	<section class="section-padding">
-		<div class="container">
-			<form method="post" action="">
-				{% csrf_token %}
-				<div class="row position-relative">
-					<div class="col-md-7 order-1 order-md-0 mt-5 mt-md-0">
-						<div class="auth-form me-0 me-md-5"> 
-							{% if error_message %}
-								<div class="alert alert-danger alert-dismissible fade show" role="alert">
-									<h2 class="password-error">{{ error_message }}</h2>
-									<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-								</div>
-							{% endif %}
-							<div class="bubble-button">
-								<span>Registrarse</span>
+<section class="section-padding">
+	<div class="container">
+		<form method="post" action="">
+			{% csrf_token %}
+			<div class="row position-relative">
+				<div class="col-md-7 order-1 order-md-0 mt-5 mt-md-0">
+					<div class="auth-form me-0 me-md-5">
+						{% if error_message %}
+							<div class="alert alert-danger alert-dismissible fade show" role="alert">
+								<h2 class="password-error">{{ error_message }}</h2>
+								<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 							</div>
-							<div class="signup-form">
-								<div class="row">
-									<div class="col-md-6">
-										<div class="single-input">
-											<label for="">Nombre(s)</label>
-											<input type="text" name="name" id="" required>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="single-input">
-											<label for="">Apellidos</label>
-											<input type="text" name="surname" id="" required>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="single-input">
-											<label for="">Fecha de Nacimiento</label>
-											<input type="date" name="date_of_birth" id="" required>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="single-input">
-											<label for="">Genero</label>
-											<select name="gender" id="" required>
-												<option value="masculino">Masculino</option>
-												<option value="femenino">femenino</option>
-												<option value="otro">otro</option>
-											</select>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="single-input">
-											<label for="">Usuario</label>
-											<input type="text" name="username" id="" required>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="single-input">
-											<label for="">Email</label>
-											<input type="email" name="email" id="" required>
-										</div>
-									</div>
-									<div class="col-md-12">
-                                        <div class="single-input password-input">
-                                            <label for="password">Contraseña</label>
-                                            <input type="password" name="password" id="password" required class="password-field">
-                                        </div>
-                                        <div class="single-input password-input">
-                                            <label for="password2">Confirmar Contraseña</label>
-                                            <input type="password" name="password2" id="password2" required class="password-field">
-                                        </div>
-                                    </div>
-									<div class="col-md-6 d-block d-md-none d-flex justify-content-end mt-4">
-										<button type="submit" class="submit-btn-2">Continuar</button>
-									</div>
-									<div class="col-md-6 d-none d-md-block">
-										<div class="signup-logo-img">
-											<img src="{% static 'images/logo.png' %}" alt="">
-										</div>
-									</div>
-								</div>
-							</div>
+						{% endif %}
+						<div class="bubble-button">
+							<span>Registrarse</span>
 						</div>
-					</div>
-					<div class="col-md-5 d-flex align-items-center justify-content-center order-0 order-md-1">
-						<div class="signup-continue-btn">
-							<button type="submit" class="submit-btn d-none d-md-block">Continuar</button>
+						<div class="signup-form">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="single-input">
+										<label for="name">Nombre(s)</label>
+										<input type="text" name="name" id="name" required>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="single-input">
+										<label for="surname">Apellidos</label>
+										<input type="text" name="surname" id="surname" required>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="single-input">
+										<label for="date_of_birth">Fecha de Nacimiento</label>
+										<input type="date" name="date_of_birth" id="date_of_birth" required>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="single-input">
+										<label for="gender">Género</label>
+										<select name="gender" id="gender" required>
+											<option value="masculino">Masculino</option>
+											<option value="femenino">Femenino</option>
+											<option value="otro">Otro</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="single-input">
+										<label for="username">Usuario</label>
+										<input type="text" name="username" id="username" required>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="single-input">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" required>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="single-input password-input">
+										<label for="password">Contraseña</label>
+										<input type="password" name="password" id="password" required class="password-field">
+									</div>
+									<div class="single-input password-input">
+										<label for="password2">Confirmar Contraseña</label>
+										<input type="password" name="password2" id="password2" required class="password-field">
+									</div>
+								</div>
+								<div class="col-md-6 d-block d-md-none d-flex justify-content-end mt-4">
+									<button type="submit" class="submit-btn-2">Continuar</button>
+								</div>
+								<div class="col-md-6 d-none d-md-block">
+									<div class="signup-logo-img">
+										<img src="{% static 'images/logo.png' %}" alt="">
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</form>
-		</div>
-	</section>
+				<div class="col-md-5 d-flex align-items-center justify-content-center order-0 order-md-1">
+					<div class="signup-continue-btn">
+						<button type="submit" class="submit-btn d-none d-md-block">Continuar</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</section>
+
 
 {% endblock main %}
