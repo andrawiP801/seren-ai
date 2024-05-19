@@ -238,7 +238,7 @@ header.main-header {
 }
 
 .signup-logo-img {
-    position: relative;
+    position: absolute;
     left: 65%;
 }
 
