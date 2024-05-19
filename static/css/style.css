@@ -175,7 +175,7 @@ header.main-header {
 }
 
 .signup-form {
-    background: black;
+    background: none;
     padding: 20px 10px;
     border-radius: 20px;
 }
@@ -211,7 +211,7 @@ header.main-header {
 
 .signup-form .single-input.password-input label {
     text-align: left;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .signup-logo-img {
