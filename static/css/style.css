@@ -203,7 +203,7 @@ header.main-header {
     background: none;
     padding: 0 10px; /* Reducir el padding superior del formulario */
     border-radius: 20px;
-    margin-top: -10px; /* Ajustar margen superior para reducir el espacio */
+    margin-top: 10px; /* Ajustar margen superior para reducir el espacio */
 }
 
 .signup-form label {
