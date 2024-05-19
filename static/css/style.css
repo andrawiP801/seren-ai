@@ -318,14 +318,12 @@ header.main-header {
 }
 
 .login-logo-img {
-    position: absolute;
-    left: 35%;
-    top: 50%;
-    transform: translateY(-50%);
+    text-align: center;
+    margin-top: 20px;
 }
 
 .login-logo-img img {
-    width: 250px;
+    width: 400px;
 }
 
 /* Main Chat Box Sec */
