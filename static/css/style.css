@@ -183,7 +183,7 @@ header.main-header {
     border-radius: 30px; /* Bordes redondeados */
     position: relative; /* Posicionamiento relativo para el triángulo */
     font-family: Arial, sans-serif; /* Familia de fuente */
-    font-size: 24px; /* Tamaño de fuente más grande */
+    font-size: 30px; /* Tamaño de fuente más grande */
     text-align: center; /* Alineación del texto */
 }
 
@@ -250,7 +250,7 @@ header.main-header {
 }
 
 .signup-logo-img img {
-    width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+    width: 400px; /* Ajusta el tamaño de la imagen según sea necesario */
 }
 
 .signup-continue-btn h2 {

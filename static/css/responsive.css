@@ -1,4 +1,3 @@
-
 /* Mobile Layout: 320px */
 @media only screen and (max-width: 767px) {
     .main-header .logo-sec img {
@@ -42,5 +41,11 @@
 
     .submit-btn {
         width: 100%; /* Asegurar que el botón ocupe todo el ancho en pantallas pequeñas */
+    }
+
+    /* Nueva regla para que el contenedor del botón "Continuar" esté centrado */
+    .signup-continue-container {
+        display: flex;
+        justify-content: center;
     }
 }
