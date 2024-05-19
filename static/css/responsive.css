@@ -29,6 +29,8 @@
         margin-top: 20px; /* Espacio entre el formulario y el botón "Continuar" */
         order: 2; /* Asegurar que el botón "Continuar" esté debajo del formulario */
         width: 100%; /* Asegurar que el botón ocupe todo el ancho del contenedor */
+        display: flex;
+        justify-content: center;
     }
 
     .signup-form-container {
@@ -41,11 +43,5 @@
 
     .submit-btn {
         width: 100%; /* Asegurar que el botón ocupe todo el ancho en pantallas pequeñas */
-    }
-
-    /* Nueva regla para que el contenedor del botón "Continuar" esté centrado */
-    .signup-continue-container {
-        display: flex;
-        justify-content: center;
     }
 }
