@@ -248,18 +248,6 @@ header.main-header {
     margin-top: 20px; /* Espacio entre el botón y la imagen */
 }
 
-/* Ajustes específicos para el formulario de registro */
-.signup-logo-img {
-    position: relative;
-    width: 100%;
-    text-align: center;
-}
-
-.signup-logo-img img {
-    width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
-    margin-top: 20px; /* Espacio entre el botón y la imagen */
-}
-
 .signup-continue-btn h2 {
     font-family: 'Montaser Arabic', sans-serif;
     font-size: 80px;
@@ -465,4 +453,16 @@ header.main-header {
 .no-message-inner h2 {
     font-size: 25px;
     line-height: 20px;
+}
+
+/* Ajustes específicos para el formulario de registro */
+.signup-logo-img {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.signup-logo-img img {
+    width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+    margin-top: 20px; /* Espacio entre el botón y la imagen */
 }
