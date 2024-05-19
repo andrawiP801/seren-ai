@@ -173,28 +173,29 @@ header.main-header {
     border-radius: 50%;
     cursor: pointer;
 }
+
 .bubble-button {
     background-color: #864499; /* Color de fondo */
     color: white; /* Color del texto */
-    padding: 10px 20px; /* Espaciado interno */
-    border-radius: 20px; /* Bordes redondeados */
+    padding: 20px 40px; /* Espaciado interno más grande */
+    border-radius: 30px; /* Bordes redondeados */
     position: relative; /* Posicionamiento relativo para el triángulo */
     font-family: Arial, sans-serif; /* Familia de fuente */
-    font-size: 18px; /* Tamaño de fuente */
+    font-size: 24px; /* Tamaño de fuente más grande */
     text-align: center; /* Alineación del texto */
 }
 
 .bubble-button::after {
     content: '';
     position: absolute;
-    bottom: -10px; /* Posición del triángulo */
+    bottom: -20px; /* Posición del triángulo */
     left: 50%; /* Centrar el triángulo horizontalmente */
     transform: translateX(-50%);
     width: 0;
     height: 0;
-    border-left: 10px solid transparent; /* Bordes transparentes para formar el triángulo */
-    border-right: 10px solid transparent;
-    border-top: 10px solid #864499; /* Color del triángulo */
+    border-left: 20px solid transparent; /* Bordes transparentes para formar el triángulo */
+    border-right: 20px solid transparent;
+    border-top: 20px solid #864499; /* Color del triángulo */
 }
 .signup-form {
     background: none;
