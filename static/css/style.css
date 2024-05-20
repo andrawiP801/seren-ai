@@ -435,11 +435,11 @@ header.main-header {
 }
 
 .write-message{
-    background: #d6b7f9;
+    background: none;
     border: none;
     border-radius: 25px;
     padding: 10px 35px;
-    font-size: 35px;
+    font-size: 24px;
     line-height: 28px;
     font-family: 'Montaser Arabic', sans-serif;
 }
@@ -449,7 +449,7 @@ header.main-header {
     border: none;
     border-radius: 25px;
     padding: 10px 35px;
-    font-size: 35px;
+    font-size: 24px;
     line-height: 28px;
     font-family: 'Montaser Arabic', sans-serif;
 }
