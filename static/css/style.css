@@ -76,8 +76,9 @@ header.main-header {
 }
 
 .menu-ais {
-    width: 20px; /* Ajusta el tamaño según tus necesidades */
-    height: 20px; /* Ajusta el tamaño según tus necesidades */
+    max-width: 24px; /* Tamaño máximo permitido */
+    width: 100%; /* Ancho al 100% del contenedor */
+    height: auto; /* Mantener proporciones */
 }
 
 .login-btn-close{
