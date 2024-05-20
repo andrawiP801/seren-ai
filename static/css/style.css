@@ -76,7 +76,7 @@ header.main-header {
 }
 
 .menu-ais {
-    max-width: 24px; /* Tamaño máximo permitido */
+    max-width: 30px; /* Tamaño máximo permitido */
     width: 100%; /* Ancho al 100% del contenedor */
     height: auto; /* Mantener proporciones */
 }
