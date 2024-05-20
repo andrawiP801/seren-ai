@@ -20,7 +20,7 @@
 						<div class="logo-sec">
 							{% if user.is_authenticated %}
 								<a id="menu-btn">
-									<i class="fa-solid fa-list menu-ais"></i>
+									<img class="menu-ais" src="{% static 'images/menu_icon.png' %}" alt="Home">
 								</a>
 								<div class="menu-open-div d-none" id="menu-open-div">
 									<a class="" href="{% url 'chat' %}">Chatea con Seren</a>
@@ -28,7 +28,7 @@
 							{% endif %}
 							{% if user.is_authenticated %}
 							<a href="{% url 'main' %}">
-								<img src="{% static 'images/logo_SerenAI.png' %}" alt="Main">
+								<img src="{% static 'images/logo_SerenAI.png' %}" alt="Ma">
 							</a>
 							{% else %}
 							<a href="{% url 'home' %}">
