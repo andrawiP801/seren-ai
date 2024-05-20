@@ -344,7 +344,7 @@ header.main-header {
 /* Main Chat Box Sec */
 
 .main-chatbox {
-    border: 8px solid #d6b7f9;
+    border: 8px solid #19D8B6;
     border-radius: 20px;
     padding: 15px 10px;
 }
@@ -373,7 +373,7 @@ header.main-header {
 }
 
 .main-chatbox .mess-ai .main-mess {
-    background: #d9d9d9;
+    background: #BBF6DB;
     max-width: 60%;
     padding: 5px 20px;
     border-radius: 20px 20px 20px 0;
@@ -382,7 +382,7 @@ header.main-header {
 .main-chatbox .mess-ai .main-mess p {
     margin: 0;
     font-size: 20px;
-    font-family: 'fontTitle';
+    font-family: 'Montaser Arabic', sans-serif;
 }
 
 .main-chatbox .mess-user {
@@ -410,7 +410,7 @@ header.main-header {
 .main-chatbox .mess-user .main-mess p {
     margin: 0;
     font-size: 20px;
-    font-family: 'fontTitle';
+    font-family: 'Montaser Arabic', sans-serif;
     line-height: 22px;
 }
 
@@ -423,25 +423,35 @@ header.main-header {
 
 .write-message .write-message-input {
     width: 100%;
-    background: #ffecdb;
+    background: #19D8B6;
     border: none;
     border-radius: 25px;
     padding: 10px 25px;
     font-size: 20px;
-    font-family: 'fontTitle';
+    font-family: 'Montaser Arabic', sans-serif;
     overflow: hidden;
     cursor: text;
     pointer-events: auto;
 }
 
-.write-message .mess-send-btn {
+.write-message{
     background: #d6b7f9;
     border: none;
     border-radius: 25px;
     padding: 10px 35px;
     font-size: 35px;
     line-height: 28px;
-    font-family: 'fontBody';
+    font-family: 'Montaser Arabic', sans-serif;
+}
+
+.mess-send-btn{
+    background: #864499;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 35px;
+    font-size: 35px;
+    line-height: 28px;
+    font-family: 'Montaser Arabic', sans-serif;
 }
 
 .password-error {
