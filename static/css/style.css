@@ -75,6 +75,10 @@ header.main-header {
     border-radius: 25px;
 }
 
+.menu-ais {
+    width: 5px; 
+}
+
 .login-btn-close{
     background: #864499;
     padding: 5px 25px;
@@ -123,7 +127,6 @@ header.main-header {
 .menu-ais {
     width: 24px; /* Ajusta el tamaño según tus necesidades */
     height: 24px; /* Ajusta el tamaño según tus necesidades */
-    vertical-align: middle; /* Alinea verticalmente si es necesario */
 }
 
 .header-auth .signup-btn {
