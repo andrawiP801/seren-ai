@@ -76,7 +76,8 @@ header.main-header {
 }
 
 .menu-ais {
-    width: 5px; 
+    width: 20px; /* Ajusta el tamaño según tus necesidades */
+    height: 20px; /* Ajusta el tamaño según tus necesidades */
 }
 
 .login-btn-close{
