@@ -31,13 +31,13 @@ if PRODUCTION:
     SECURE_HSTS_SECONDS = 15780000
     SECURE_HSTS_INCLUDE_SUBDOMAINS = True
     SECURE_HSTS_PRELOAD = True
-    SECURE_SSL_REDIRECT = True
+    SECURE_SSL_REDIRECT = False
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
     SECURE_BROWSER_XSS_FILTER = True
     SECURE_CONTENT_TYPE_NOSNIFF = True
     SESSION_COOKIE_HTTPONLY = True
-    ALLOWED_HOSTS = ['andrawi.com']
+    ALLOWED_HOSTS = ['andrawi.com', '24.199.76.205']
 
 else:
     SECRET_KEY = 'django-insecure-pr9h6movd2f=lg5_ba3yw)0bogmo61wc0y=n-g*y@ai-j8*=d*'
